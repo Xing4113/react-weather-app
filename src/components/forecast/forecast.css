@@ -19,6 +19,7 @@
 
 .icon-small {
   width: 40px;
+  cursor: pointer;
 }
 
 .day {
@@ -26,26 +27,28 @@
   flex: 1 1;
   font-weight: 600;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 .description {
   flex: 1 1;
   margin-right: 15px;
   text-align: right;
+  cursor: pointer;
 }
 
 .min-max {
   color: #757575;
+  cursor: pointer;
 }
 
 .daily-details-grid {
   grid-row-gap: 0;
-  grid-column-gap: 15px;
-  column-gap: 15px;
+  column-gap: 130px;
   display: grid;
   flex: 1 1;
   grid-template-columns: auto auto;
-  padding: 5px 15px;
+  padding: 5px 40px;
 }
 
 .daily-details-grid-item {
@@ -61,4 +64,8 @@
 
 .daily-details-grid-item label:last-child {
   color: #212121;
+}
+
+.middle-screen {
+  display: none;
 }

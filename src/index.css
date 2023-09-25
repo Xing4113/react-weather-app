@@ -1,18 +1,15 @@
-html {
-  height: 100%;
-}
-
 body {
   margin: 0;
   font-family: "Roboto", Arial !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(
-    140deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(144, 126, 255, 0.33) 50%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  background-repeat: no-repeat;
+      140deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(144, 126, 255, 0.33) 50%,
+      rgba(255, 255, 255, 1) 100%
+    )
+    no-repeat fixed center;
+
   text-transform: uppercase;
 }
