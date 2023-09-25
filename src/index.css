@@ -1,12 +1,18 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", Arial !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #d5d4d4;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  background: linear-gradient(
+    140deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(144, 126, 255, 0.33) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
+  text-transform: uppercase;
 }
