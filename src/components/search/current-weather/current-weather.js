@@ -11,6 +11,7 @@ const WeatherContainer = styled.div`
     color: black;
     
     background-color: #${props => props.bg};
+    opacity: 0.9;
 
     margin: 20px auto 0 auto;
     padding: 15px;
