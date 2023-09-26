@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
 import { GEO_API_URL, Geo_Options } from "../../api";
-
+import "../search/search.css"
 export const Search = ({ onSearchChange }) => {
 
     const [search, setSearch] = useState(null);
@@ -37,6 +37,7 @@ export const Search = ({ onSearchChange }) => {
             value={search}
             onChange={handleOnChange}
             loadOptions={loadOption}
+            className="city-search-bar"
         />
     )
 }
