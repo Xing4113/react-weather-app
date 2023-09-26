@@ -10,7 +10,7 @@ const WeatherContainer = styled.div`
     box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
     color: black;
     
-    background-color: #${props => props.bg};
+    background-color: transparent;
     opacity: 0.9;
 
     margin: 20px auto 0 auto;
@@ -58,20 +58,8 @@ const DetailTitle = styled.div`
 
 
 export const CurrentWeather = ({ data }) => {
-
-    const bg_Color = (weather) => {
-
-        if (weather.includes("sky")) {
-            return "87CEEB";
-        } else if (weather.includes("cloud")) {
-            return "CCCCCC";
-        } else if (weather.includes("rain")) {
-            return "B0C4DE";
-        }
-    }
-
     return (
-        <WeatherContainer bg={bg_Color(data.weather[0].description)}>
+        <WeatherContainer>
 
             <Top>
                 <p className="city">{data.city}</p>
